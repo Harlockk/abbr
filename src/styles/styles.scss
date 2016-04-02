@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(32, 25, 48);
+}
+
+#app {
+  display: block;
+  width: 80%;
+  margin: auto;
+
+  * {
+    display: block;
+    color: rgb(242, 242, 242);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .title {
+    margin-bottom: 55px;
+    padding-bottom: 20px;
+    border-bottom: dashed 1px rgba(242, 242, 242, 0.18);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  .validate {
+    width: 100%;
+    background-color: rgb(17, 143, 60);
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 5px;
+
+    * {
+      display: inline;
+      font-size: 25px;
+      font-weight: lighter;
+    }
+
+    img {
+      margin-left: 15px;
+      width: 20px;
+    }
+  }
+
+  .search-input {
+    width: 100%;
+    color: rgb(45, 45, 45);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .explanations {
+    margin: 35px 0;
+    padding: 0;
+
+    li {
+      background-color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 20px;
+      box-shadow: 3px 3px 15px rgba(47, 47, 47, 0.80);
+      animation: display 4s ease;
+      -webkit-animation: display 4s ease;
+
+      * {
+        color: rgb(45, 45, 45);
+      }
+
+      h5 {
+        margin: 0;
+        padding: 25px;
+        border-bottom: dashed 1px rgb(32, 25, 48);
+        text-align: center;
+      }
+
+      p {
+        margin: 0;
+        padding: 25px;
+      }
+    }
+  }
+}
+
+@keyframes display {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes display {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
